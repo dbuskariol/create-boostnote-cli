@@ -7,6 +7,7 @@ note_template_path="$PWD/note_template.txt"
 note_folder="note_folder_name"
 note_title="note_title"
 note_body="note_body"
+note_folder_path="~/Library/Application\ Support/Boostnote/Storage/"
 
 # Generate filename
 uuid=$("$node_path" "$generate_filename_path")
@@ -26,9 +27,9 @@ note=$(echo "$note" | sed "s/<updated_at>/$timestamp/g")
 note=$(echo "$note" | sed "s/<note_folder>/$note_folder/g")
 
 # Write file
-echo "$note" >> ~/Library/Application\ Support/Boostnote/Storage/notes/"$filename"
+echo "$note" >> "$note_folder_path"/notes/"$filename"
 
 # Basic check note file exists
-if [ -f ~/Library/Application\ Support/Boostnote/Storage/notes/"$filename" ]; then
+if [ -f "$note_folder_path"/notes/"$filename" ]; then
     echo "Note generated"
 fi
