@@ -1,0 +1,14 @@
+createdAt: "<created_at>"
+updatedAt: "<updated_at>"
+type: "MARKDOWN_NOTE"
+folder: "<note_folder>"
+title: "<note_title>"
+tags: []
+content: '''
+<note_title>
+
+<note_body>
+
+'''
+isStarred: false
+isTrashed: false
