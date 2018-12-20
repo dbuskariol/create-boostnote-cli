@@ -2,12 +2,13 @@
 
 # Set variables
 generate_filename_path="$PWD/generate_filename.js"
-node_path="path/to/node/binary"
 note_template_path="$PWD/note_template.txt"
-note_folder="note_folder_name"
-note_title="note_title"
-note_body="note_body"
-note_folder_path="~/Library/Application\ Support/Boostnote/Storage/"
+
+node_path="path/to/node/binary"
+note_folder="note_folder_id"
+note_title="title"
+note_body="body"
+note_storage_path="path/to/boostnote/storage"
 
 # Generate filename
 uuid=$("$node_path" "$generate_filename_path")
@@ -27,9 +28,9 @@ note=$(echo "$note" | sed "s/<updated_at>/$timestamp/g")
 note=$(echo "$note" | sed "s/<note_folder>/$note_folder/g")
 
 # Write file
-echo "$note" >> "$note_folder_path"/notes/"$filename"
+echo "$note" >> "$note_storage_path"/notes/"$filename"
 
 # Basic check note file exists
-if [ -f "$note_folder_path"/notes/"$filename" ]; then
+if [ -f "$note_storage_path"/notes/"$filename" ]; then
     echo "Note generated"
 fi

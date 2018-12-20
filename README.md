@@ -15,17 +15,19 @@ The script sets variables that are used to fill the node metadata. Please set th
 
 ```
 node_path="path/to/node/binary"
-note_folder="folder_name"
+note_folder="note_folder_id"
 note_title="title"
 note_body="body"
+note_storage_path="path/to/boostnote/storage"
 ```
 
 In this context:
 
 - `node_path` refers to the path of the `node` binary. For example: `/Users/<username>/.nodenv/versions/<node_version>/bin/node`
-- `node_folder` refers to the folder ID that you store your notes in. This can be found by navigating to Boostnote preferences, clicking on the "Storage" tab and selecting the ID beside the folder name. For example in the folder `Important Things(3e22846e3dab55ea2874)`, `3e22846e3dab55ea2874` would be the `note_folder` value.
+- `note_folder` refers to the folder ID that you store your notes in. This can be found by navigating to Boostnote preferences, clicking on the "Storage" tab and selecting the ID beside the folder name. For example in the folder `Important Things(3e22846e3dab55ea2874)`, `3e22846e3dab55ea2874` would be the `note_folder` value.
 - `note_title` refers to the title you want the note to have
 - `note_body` refers to the body you want the note to have
+- `note_storage_path` refers to the full path of the Boostnote storage folder. For example: `/Users/<username>/Library/Application Support/Boostnote/Storage"`
 
 ### Usage
 
