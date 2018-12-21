@@ -32,5 +32,7 @@ echo "$note" >> "$note_storage_path"/notes/"$filename"
 
 # Basic check note file exists
 if [ -f "$note_storage_path"/notes/"$filename" ]; then
-    echo "Note generated"
+    echo "Note created: [$note_title](:note:$uuid)"
+else
+  echo "Unable to create note in $note_storage_path/notes/"
 fi
