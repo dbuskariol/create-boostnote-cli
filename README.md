@@ -39,4 +39,4 @@ sh create_note.sh
 
 ### Integrations
 
-This script can easily be adapted to take input for the `note_title` and `note_body` variables, as well as additional metadata such as `tags`. I've modified this script to be used in an [Alfred workflow](https://www.alfredapp.com/workflows/) that pulls ticket information from my ticketing systems API and created a matching note.
+This script can easily be adapted to take input for the `note_title` and `note_body` variables, as well as additional metadata such as `tags`. I've modified this script to be used in an [Alfred workflow](https://www.alfredapp.com/workflows/) that pulls ticket information from my ticketing system's API to create a matching note.
