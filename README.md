@@ -1,5 +1,5 @@
 # create-boostnote-cli
-Create a note in Boostnote via the CLI
+Create a note in [Boostnote](https://github.com/BoostIO/Boostnote) via the CLI
 
 ### Installation
 
