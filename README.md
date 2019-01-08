@@ -9,7 +9,7 @@ To use this script, you need the `node` module `uuid`. Please ensure `node` is [
 2. `cd create-boostnote-cli`
 3. `npm install uuid`
 
-### Set Up
+### Setup
 
 The script sets variables that are used to fill the node metadata. Please set the following variables located at the top of the `create_note.sh` script:
 
